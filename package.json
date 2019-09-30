@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf log",
+    "start": "npm install && pm2 start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "fastify": "^2.8.0",
+    "mongoose": "^5.7.1",
+    "redis": "^2.8.0"
+  }
+}
