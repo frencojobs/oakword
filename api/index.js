@@ -5,8 +5,12 @@ const mongoose = require("mongoose");
 const fastify = require("fastify")({
   logger: {
     level: "info",
-    file: path.resolve(__dirname, '..', "log/access.log")
+    file: path.resolve(__dirname, "..", "log/access.log")
   }
+});
+
+fastify.register(require("fastify-cors"), {
+  origin: '*'
 });
 
 dotenv.config();
