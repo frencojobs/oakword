@@ -1,7 +1,7 @@
 {
   "private": true,
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Minimal EN - MM Dictionary, API provider",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf log",
@@ -11,16 +11,15 @@
     "front:dev": "sirv public --single --dev --host 0.0.0.0"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Frenco Jobs <me@frenco.codes>",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^8.1.0",
     "fastify": "^2.8.0",
     "fastify-cors": "^2.1.3",
     "fastify-static": "^2.5.0",
     "mongoose": "^5.7.1",
-    "redis": "^2.8.0",
-    "sirv-cli": "^0.4.4"
+    "redis": "^2.8.0"
   },
   "devDependencies": {
     "rollup": "^1.12.0",
@@ -29,6 +28,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
-    "svelte": "^3.0.0"
+    "svelte": "^3.0.0",
+    "sirv-cli": "^0.4.4"
   }
 }
