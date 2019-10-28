@@ -10,7 +10,7 @@ const fastify = require("fastify")({
 });
 
 fastify.register(require("fastify-cors"), {
-  origin: '*'
+  origin: "*"
 });
 
 dotenv.config();
@@ -68,7 +68,7 @@ fastify.get("/word/:word", (request, reply) => {
       db.collection("dictionary")
         .find({
           $text: {
-            $search: `"${q}"`
+            $search: `${q}`
           }
         })
         .project({
