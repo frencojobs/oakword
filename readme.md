@@ -9,12 +9,12 @@ A document in the database looks like -
 
 ```typescript
 interface document {
-  _id: number;
-  word: string;
-  type: string;
-  def: string;
-  exact?: boolean;
-  score?: number;
+  _id: number
+  word: string
+  type: string
+  def: string
+  exact?: boolean
+  score?: number
 }
 ```
 
