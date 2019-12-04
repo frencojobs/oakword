@@ -1,29 +1,29 @@
 <script>
-  import { getParameterByName, changeURL } from "./helpers";
-  import ResultBox from "./components/ResultBox.svelte";
-  import Search from "./components/Search.svelte";
-  import ActivityIndicator from "./components/ActivityIndicator.svelte";
-  let data = [];
-  let default_val = "";
+  import { getParameterByName, changeURL } from './helpers'
+  import ResultBox from './components/ResultBox.svelte'
+  import Search from './components/Search.svelte'
+  import ActivityIndicator from './components/ActivityIndicator.svelte'
+  let data = []
+  let default_val = ''
 
   async function getData(word) {
-    const res = await fetch(`https://api.oakword.tech/word/${word}`);
-    const json = await res.json();
+    const res = await fetch(`https://api.oakword.tech/word/${word}`)
+    const json = await res.json()
 
     if (res.ok) {
-      return json;
+      return json
     } else {
-      throw new Error(json);
+      throw new Error(json)
     }
   }
   function searchHandler(e) {
-    let word = e.target.value;
-    data = getData(word);
-    changeURL(word);
+    let word = e.target.value
+    data = getData(word)
+    changeURL(word)
   }
-  if (getParameterByName("q")) {
-    searchHandler({ target: { value: getParameterByName("q") } });
-    default_val = getParameterByName("q") || "";
+  if (getParameterByName('q')) {
+    searchHandler({ target: { value: getParameterByName('q') } })
+    default_val = getParameterByName('q') || ''
   }
 </script>
 

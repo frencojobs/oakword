@@ -1,11 +1,11 @@
 <script>
-  import { tts } from "../helpers";
+  import { tts } from '../helpers'
   let data = {
-    word: "",
-    type: "",
-    def: ""
-  };
-  export let item = data;
+    word: '',
+    type: '',
+    def: ''
+  }
+  export let item = data
 </script>
 
 <style>
@@ -54,7 +54,7 @@
     <div
       class="volume-icon--wrapper"
       on:click={() => {
-        tts(item.word);
+        tts(item.word)
       }}>
       <img src="/volume.svg" alt="volume" class="volume-icon" />
     </div>

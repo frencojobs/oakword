@@ -1,6 +1,6 @@
 <script>
-  export let searchHandler = () => {};
-  export let value = "";
+  export let searchHandler = () => {}
+  export let value = ''
 </script>
 
 <style>
