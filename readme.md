@@ -1,3 +1,5 @@
+> Starting from 19/08/2020 oakword.tech is **no longer available** as the droplet is destroyed, and the domain is expired. As I stated in my blog post, this is meant to be a toy project serves the purpose of me learning things by trying out. I think I've learned pretty much of what I was intended to. 
+
 # Oakword Dictionary
 
 Oakword is Minimal English - Myanmar dictionary with public API provider based on javascript development stack, using the data from [Ornagai](http://ornagai.com). Note that I am making this thing as an experiment, or as an exercise to help me through learning about NodeJS, databases like redis, and mongoDB used in this website, domain management, and website deployment on digitalocean with NGINX.
@@ -52,4 +54,4 @@ To get the documents of auto complete list of words starting with a word, call `
 
 ## License
 
-MIT
+MIT © Frenco Jobs
